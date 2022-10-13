@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        fieldset {
+            width: 200px;
+        }
+    </style>
+    <title>Site de rencontres</title>
+</head>
+
+<body>
+    <form action="" enctype="multipart/form-data" method="post">
+        <p>Nom : <input type="text" minlength="2" maxlength="45" pattern="[A-Za-z'- ]"></p>
+        <p>Prénom : <input type="text" minlength="2" maxlength="45" pattern="[A-Za-z'- ]"></p>
+        <p>email : <input type="email" pattern="^([a-z0-9._%+-]+)@([a-z0-9.-]+)(\.com|\.fr|\.net|\.org$"></p>
+        <fieldset>
+            <legend> Sexe </legend>
+            <div>
+                <input type="radio" id="masculin" name="sexe">Masculin
+            </div>
+            <div>
+                <input type="radio" id="feminin" name="sexe" checked>Féminin
+            </div>
+        </fieldset>
+        <div>
+            Pays :
+            <select id="pays">
+                <option value="france">FRANCE</option>
+                <option value="angleterre">ANGLETERRE</option>
+                <option value="allemagne" selected>ALLEMAGNE</option>
+                <option value="italie">ITALIE</option>
+                <option value="suisse">SUISSE</option>
+                <option value="espagne">ESPAGNE</option>
+            </select>
+        </div>
+        <fieldset>
+            <legend>langues préférées :</legend>
+            <div><input type="checkbox">français</div>
+            <div><input type="checkbox">anglais</div>
+            <div><input type="checkbox">allemand</div>
+            <div> <input type="checkbox">italien</div>
+            <div> <input type="checkbox">espagnol</div>
+            </div>
+        </fieldset>
+
+    <div>
+        <fieldset>
+            <legend>domaine d'activité</legend>
+            <div>
+                <input type="radio">Plombier
+            </div>
+            <div>
+                <input type="radio">Electricien
+            </div>
+            <div>
+                <input type="radio">Carreleur
+            </div>
+            <div>
+                <input type="radio">Maçon
+            </div>
+            <div>
+                <input type="radio">Menuisier
+            </div>
+            <div>
+                <input type="radio">Couvreur
+            </div>
+        </fieldset>
+    </div>
+    <div>
+            <input type="file" name="photo" value="photo" accept="image/png, image/jpeg">
+    </div>
+    <input type="submit" value="Envoyer!">
+    </form>
+
+
+
+
+
+</body>
+
+</html>
